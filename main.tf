@@ -64,7 +64,7 @@ resource "aws_instance" "my_ec2" {
   user_data = <<-EOF
               #!/bin/bash
               yum install -y nginx
-              echo "Hello, World!" > /usr/share/nginx/html/index.html
+              echo "Hello, Friend!" > /usr/share/nginx/html/index.html
               systemctl start nginx
               systemctl enable nginx
               EOF
